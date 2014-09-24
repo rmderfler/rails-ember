@@ -1,0 +1,12 @@
+<h1>Dracula's blog</h1>
+
+  <ul>
+
+    {{#each}}
+      <li>{{#link-to 'post' this.id}}{{title}}{{/link-to}}</li>
+    {{/each}}
+
+  </ul>
+{{#link-to 'new-post' classNames="btn btn-primary"}}New post{{/link-to}}
+
+<p><a href='#' {{action 'sortByTitle'}}>Sort by title</a></p>

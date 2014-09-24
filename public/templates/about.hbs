@@ -1,0 +1,15 @@
+
+
+<h1>About Dracula</h1>
+
+<p>Here's some nonsense about Dracula!</p>
+
+<button class="btn btn-primary"{{action 'showRealName'}}>Click here to learn Dracula's real name</button>
+
+{{#if isPictureShowing}}
+<button class="btn btn-info" {{action 'hidePicture'}}>Hide</button>
+  <p><img src="http://upload.wikimedia.org/wikipedia/commons/9/92/Queen_of_hearts_-_Valentin_deck.png"></p>
+{{else}}
+  <button class="btn btn-info" {{action 'showPicture'}}>Click here to see a picture</button>
+{{/if}}
+
